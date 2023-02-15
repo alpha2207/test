@@ -9,10 +9,11 @@
 <body>
     <!-- Create a "WhatsApp Login" button -->
     <div id="otpless" style="width:300px;">
-        <script type="text/javascript" src="https://otpless.com/auth.js"></script>
-        <!-- Get user's WhatsApp number and name -->
-        <script type="text/javascript">
-           window.open("https://otpless.com/", "_self");
+        var otplessUser = window.otplessUser;
+            console.log("Here");
+            var waNumber = otplessUser.waNumber;
+            var waName = otplessUser.waName;
+            window.location.href("https://www.google.com")
       // Signup-sign the user and redirect to next page
         </script>
     </div>
