@@ -8,8 +8,11 @@
 
 <body>
     <!-- Create a "WhatsApp Login" button -->
-    <div id="otpless" style="width:300px;">
-        var otplessUser = window.otplessUser;
+    <div id="otpless">
+        <script type="text/javascript" src="https://otpless.com/auth.js"></script>
+        <!-- Get user's WhatsApp number and name -->
+        <script type="text/javascript">
+            var otplessUser = window.otplessUser;
             console.log("Here");
             var waNumber = otplessUser.waNumber;
             var waName = otplessUser.waName;
